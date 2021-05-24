@@ -45,7 +45,7 @@ Tempdate <- strptime(inp[,1], format= "%d/%m/%Y")
 MAQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%Y"), FUN=sum)  
 write.csv(MAQ_Estrella, file= "MAQ.csv")   
 
-![](Captura 1 consola.PNG)   
+![](Cap1.PNG)   
 
 **Figura 6. Consola** _ Captura 1 consola   
 
