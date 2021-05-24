@@ -9,7 +9,7 @@ lines(inp[,3], col="black")
 
 ![](1.PNG)
 
-**Figura 1. Hidrograma** 
+                                                                **Figura 1. Hidrograma** 
 
 
 2. Luego se hace un histograma como se distribuye el mínimo y el máximo, se evidencia la frecuencia con la que se encuentra una medida del caudal en mm por día.
