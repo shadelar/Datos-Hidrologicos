@@ -45,6 +45,7 @@ Tempdate <- strptime(inp[,1], format= "%d/%m/%Y")
 MAQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%Y"), FUN=sum)  
 write.csv(MAQ_Estrella, file= "MAQ.csv")   
 
+![](Captura 1 consola.PNG)   
 **Figura 6. Consola** _ Captura 1 consola   
 
 Y para exportar el caudal acumulado por año de cada rio en el directorio se digita:   
