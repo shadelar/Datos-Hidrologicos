@@ -7,7 +7,7 @@
 plot(inp[,2], main="Hidrograma comparando el caudal por día(mm) con sus fechas diarias", xlab="Fecha", ylab="Caudal por dia en mm", type = "l", col="red")   
 lines(inp[,3], col="black")
 
-![](Rplotgrafico 1.png)
+![](Rplotgrafico 1.jpg)
 
 **Figura 1. Hidrograma** 
 
