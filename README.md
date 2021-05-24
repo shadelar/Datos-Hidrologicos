@@ -28,6 +28,9 @@
 
 
 
+   
+
+
 3. Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella:  
 
 -plot(Estrella, xlab= "Fecha", ylab = "Cuadal del Rio Estrella en mm", main = "Gráfico de Puntos con el dato diario del caudal del Rio Estrella en mm")   
