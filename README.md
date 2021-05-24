@@ -19,10 +19,9 @@ hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="
 hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm del Rio Banano")   
 
 ![](2.PNG)
-**Figura 2. Histograma Rio Estrella**   
-
+**Figura 2. Histograma Rio Banano** 
 ![](3.PNG)
-**Figura3. Histograma Rio Banano**   
+**Figura3. Histograma Rio Estrella**   
 
 
 3. Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella:  
