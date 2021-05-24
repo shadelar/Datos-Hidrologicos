@@ -71,7 +71,7 @@ Y se hace una comparación de ambos ríos, es más fácil para visualizar y arro
 MMQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%m"), FUN=sum)   
 MMQ_Banano <- tapply(Banano, format(Tempdate, format= "%m"), FUN=sum)     
  
-![](8.png)    
+![](8.PNG)    
 **Figura 8. Consola, datos mensuales**    
 
 ## Análisis de correlación titulo  
