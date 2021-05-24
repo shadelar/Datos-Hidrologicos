@@ -4,7 +4,7 @@
 ### Ejercicio exploratorio
 
  
- I. Se importa el archivo FDC desde el directorio de elección, luego se realiza un hidrograma para comprar el caudal por día en mm de ambos ríos con las fechas, se determina el color  el tipo de gráfico líneas, con: 
+ Se importa el archivo FDC desde el directorio de elección, luego se realiza un hidrograma para comprar el caudal por día en mm de ambos ríos con las fechas, se determina el color  el tipo de gráfico líneas, con: 
 
 -plot(inp[,2], main="Hidrograma comparando el caudal por día(mm) con sus fechas diarias", xlab="Fecha", ylab="Caudal por dia en mm", type = "l", col="red")   
 -lines(inp[,3], col="black")
@@ -14,7 +14,7 @@
 
 
 
-II. Luego se hace un histograma como se distribuye el mínimo y el máximo, se evidencia la frecuencia con la que se encuentra una medida del caudal en mm por día.
+Luego se hace un histograma como se distribuye el mínimo y el máximo, se evidencia la frecuencia con la que se encuentra una medida del caudal en mm por día.
 
 -summary(inp[,2:3])    
 -hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm) del Rio Estrella")     
@@ -31,7 +31,7 @@ II. Luego se hace un histograma como se distribuye el mínimo y el máximo, se e
    
 
 
-III. Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella:  
+Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella:  
 
 -plot(Estrella, xlab= "Fecha", ylab = "Cuadal del Rio Estrella en mm", main = "Gráfico de Puntos con el dato diario del caudal del Rio Estrella en mm")   
 
@@ -48,7 +48,7 @@ III. Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella
 
 
 
-IV. Se define el formato de la fecha y tiempo de la serie con día, mes y año con la columna 1 de cada rio y se obtiene el acumulado por año en la consola del 73 al 83, además se reasignan los nombres:    
+Se define el formato de la fecha y tiempo de la serie con día, mes y año con la columna 1 de cada rio y se obtiene el acumulado por año en la consola del 73 al 83, además se reasignan los nombres:    
 
 -plot(Estrella)   
 -Tempdate <- strptime(inp[,1], format= "%d/%m/%Y")   
@@ -67,7 +67,7 @@ y se obtiene un archivo MAQ en el directorio de trabajo del 73 al 83.
 
 
 
-V. Para combinar el grafico de puntos del Rio Banano con el de líneas del Rio Estrella con color rojo,  se digita:  
+Para combinar el grafico de puntos del Rio Banano con el de líneas del Rio Estrella con color rojo,  se digita:  
 
 -plot(MAQ_Banano, xlab= "Fecha", ylim = c(100,3000))    
 -lines(MAQ_Estrella, col=2)    
@@ -77,7 +77,7 @@ Y se hace una comparación de ambos ríos, es más fácil para visualizar y arro
 ![](7.png)  
   
  
-VI. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
+Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
 
 -MMQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%m"), FUN=sum)   
 -MMQ_Banano <- tapply(Banano, format(Tempdate, format= "%m"), FUN=sum)     
