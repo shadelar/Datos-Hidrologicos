@@ -4,7 +4,7 @@
 ### Ejercicio exploratorio
 
  
-1. Se importa el archivo FDC desde el directorio de elección, luego se realiza un hidrograma para comprar el caudal por día en mm de ambos ríos con las fechas, se determina el color  el tipo de gráfico líneas, con: 
+ 1. Se importa el archivo FDC desde el directorio de elección, luego se realiza un hidrograma para comprar el caudal por día en mm de ambos ríos con las fechas, se determina el color  el tipo de gráfico líneas, con: 
 
 -plot(inp[,2], main="Hidrograma comparando el caudal por día(mm) con sus fechas diarias", xlab="Fecha", ylab="Caudal por dia en mm", type = "l", col="red")   
 -lines(inp[,3], col="black")
