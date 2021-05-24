@@ -63,7 +63,7 @@ lines(MAQ_Estrella, col=2)
 
 Y se hace una comparación de ambos ríos, es más fácil para visualizar y arroja datos como por ejemplo, los años donde se presenta el Fenómeno del Niño.  
 
-![](7.png) 
+![](7.png)  
 **Figura 7. Grafico comparativo de ambos Ríos**   
  
 6. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
@@ -71,7 +71,8 @@ Y se hace una comparación de ambos ríos, es más fácil para visualizar y arro
 MMQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%m"), FUN=sum)   
 MMQ_Banano <- tapply(Banano, format(Tempdate, format= "%m"), FUN=sum)     
  
-**Figura 9. Consola, datos mensuales**    
+![](8.png)    
+**Figura 8. Consola, datos mensuales**    
 
 ## Análisis de correlación titulo  
 
