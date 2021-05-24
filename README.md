@@ -66,7 +66,7 @@ Y se hace una comparación de ambos ríos, es más fácil para visualizar y arro
 
 **Figura 8. Grafico comparativo de ambos Ríos**   
  
-6. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:     
+6. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
 
 MMQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%m"), FUN=sum)   
 MMQ_Banano <- tapply(Banano, format(Tempdate, format= "%m"), FUN=sum)     
