@@ -81,7 +81,8 @@ Para correlacionar los datos se utiliza cor y se pueden utilizar diferentes mét
 corinp <- cor(inp[,2:3], method = "spearman")    
 plot(Estrella, Banano)    
 
-**Figura 10. Grafico de Coeficiente de Correlación.**  Grafico 6     
+![](9.PNG)   
+**Figura 9. Grafico de Coeficiente de Correlación.**  Grafico 6     
 
 ## Análisis de Regresión Lineal titulo    
 
@@ -91,9 +92,12 @@ inp.lm <- lm(inp[,2] ~ inp[,3], data=inp)
 summary(inp.lm)   
 plot (inp.lm)    
 
+![](11.PNG)    
 **Figura 11. Regresión Lineal**     
 
+![](12.PNG)    
 **Figura 12. Regresión Lineal**    
 
+![](13.PNG)    
 **Figura 13. Regresión Lineal**   
 
