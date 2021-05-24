@@ -9,7 +9,6 @@ lines(inp[,3], col="black")
 
 ![](1.PNG)
 
-                                                                **Figura 1. Hidrograma** 
 
 
 2. Luego se hace un histograma como se distribuye el mínimo y el máximo, se evidencia la frecuencia con la que se encuentra una medida del caudal en mm por día.
@@ -19,9 +18,9 @@ hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="
 hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm del Rio Banano")   
 
 ![](2.PNG)
-**Figura 2. Histograma Rio Banano** 
+ 
 ![](3.PNG)
-**Figura3. Histograma Rio Estrella**   
+
 
 
 3. Se hace un grafico de puntos y acá se nota el dato diario del Rio Estrella:  
@@ -29,10 +28,10 @@ hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Hi
 plot(Estrella, xlab= "Fecha", ylab = "Cuadal del Rio Estrella en mm", main = "Gráfico de Puntos con el dato diario del caudal del Rio Estrella en mm")   
 
 ![](4.PNG)
-**Figura 4. Grafico de puntos dato diario del Rio Estrella.**   
+ 
 
 ![](5.PNG)
-**Figura 5. Grafico de puntos dato diario del Rio Banano.**   
+   
 
 
 
@@ -47,7 +46,7 @@ write.csv(MAQ_Estrella, file= "MAQ.csv")
 
   
 ![](20.PNG)     
-**Figura 6. Consola** _ Captura 1 consola   
+ 
 
 Y para exportar el caudal acumulado por año de cada rio en el directorio se digita:   
 
@@ -64,7 +63,7 @@ lines(MAQ_Estrella, col=2)
 Y se hace una comparación de ambos ríos, es más fácil para visualizar y arroja datos como por ejemplo, los años donde se presenta el Fenómeno del Niño.  
 
 ![](7.png)  
-**Figura 7. Grafico comparativo de ambos Ríos**   
+  
  
 6. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
 
@@ -72,7 +71,7 @@ MMQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%m"), FUN=sum)
 MMQ_Banano <- tapply(Banano, format(Tempdate, format= "%m"), FUN=sum)     
  
 ![](8.PNG)    
-**Figura 8. Consola, datos mensuales**    
+ 
 
 ## Análisis de correlación titulo  
 
@@ -82,7 +81,7 @@ corinp <- cor(inp[,2:3], method = "spearman")
 plot(Estrella, Banano)    
 
 ![](9.PNG)   
-**Figura 9. Grafico de Coeficiente de Correlación.**  Grafico 6     
+  
 
 ## Análisis de Regresión Lineal titulo    
 
@@ -93,11 +92,11 @@ summary(inp.lm)
 plot (inp.lm)    
 
 ![](11.PNG)    
-**Figura 11. Regresión Lineal**     
+    
 
 ![](12.PNG)    
-**Figura 12. Regresión Lineal**    
+   
 
 ![](13.PNG)    
-**Figura 13. Regresión Lineal**   
+ 
 
