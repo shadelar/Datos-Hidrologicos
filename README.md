@@ -12,9 +12,9 @@ Figura 1. Hidrograma
 
 2. Luego se hace un histograma como se distribuye el mínimo y el máximo, se evidencia la frecuencia con la que se encuentra una medida del caudal en mm por día.
 
-summary(inp[,2:3])
-hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm) del Rio Estrella")
-hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm del Rio Banano")
+summary(inp[,2:3])    
+hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm) del Rio Estrella")     
+hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm del Rio Banano")   
 
 Figura 2. Histograma Rio Estrella 
 
