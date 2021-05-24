@@ -18,8 +18,10 @@ summary(inp[,2:3])
 hist(inp[,2], xlab = "Caudal del Rio Estrella (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm) del Rio Estrella")     
 hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Histograma de la frecuencia con la que se encuentra una medida del caudal en mm del Rio Banano")   
 
+![](2.PNG)
 **Figura 2. Histograma Rio Estrella**   
 
+![](3.PNG)
 **Figura3. Histograma Rio Banano**   
 
 
@@ -27,8 +29,10 @@ hist(inp[,3], xlab = "Caudal del Rio Banano (mm)", ylab = "Frecuencia", main="Hi
 
 plot(Estrella, xlab= "Fecha", ylab = "Cuadal del Rio Estrella en mm", main = "Gráfico de Puntos con el dato diario del caudal del Rio Estrella en mm")   
 
+![](4.PNG)
 **Figura 4. Grafico de puntos dato diario del Rio Estrella.**   
 
+![](5.PNG)
 **Figura 5. Grafico de puntos dato diario del Rio Banano.**   
 
 
