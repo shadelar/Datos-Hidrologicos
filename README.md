@@ -31,6 +31,7 @@ plot(Estrella, xlab= "Fecha", ylab = "Cuadal del Rio Estrella en mm", main = "Gr
 **Figura 5. Grafico de puntos dato diario del Rio Banano.**   
 
 
+
 4. Se define el formato de la fecha y tiempo de la serie con día, mes y año con la columna 1 de cada rio y se obtiene el acumulado por año en la consola del 73 al 83, además se reasignan los nombres:    
 
 plot(Estrella)   
