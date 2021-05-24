@@ -46,7 +46,7 @@ MAQ_Estrella <- tapply(Estrella, format(Tempdate, format= "%Y"), FUN=sum)
 write.csv(MAQ_Estrella, file= "MAQ.csv")   
 
   
-![](20.PNG)
+![](20.PNG)     
 **Figura 6. Consola** _ Captura 1 consola   
 
 Y para exportar el caudal acumulado por año de cada rio en el directorio se digita:   
@@ -55,7 +55,6 @@ write.csv(rbind(MAQ_Estrella,MAQ_Banano), file= "MAQ.csv")
 
 y se obtiene un archivo MAQ en el directorio de trabajo del 73 al 83.   
 
-**Figura 7. MAQ en el directorio de trabajo** _ CAPTURA 4 MAQ   
 
 5. Para combinar el grafico de puntos del Rio Banano con el de líneas del Rio Estrella con color rojo,  se digita:  
 
@@ -64,7 +63,8 @@ lines(MAQ_Estrella, col=2)
 
 Y se hace una comparación de ambos ríos, es más fácil para visualizar y arroja datos como por ejemplo, los años donde se presenta el Fenómeno del Niño.  
 
-**Figura 8. Grafico comparativo de ambos Ríos**   
+
+**Figura 7. Grafico comparativo de ambos Ríos**   
  
 6. Para obtener un acumulado promedio mensual de los 10 años, en 12 columnas (12 meses) y que se defina  que variabilidad tiene el caudal por mes se digita y se obtiene en la consola:      
 
